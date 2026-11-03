@@ -5,5 +5,5 @@
  * El sitio funciona visualmente sin configurar la URL, pero el envío permanece bloqueado.
  */
 window.IVANJO_CONFIG = {
-  scriptUrl: "https://script.google.com/macros/s/AKfycbwtzGrG3PadDtp-XH8l19w0df1RJG010T2BpVgdFFoXg8BosbS1SlatlGX3bwGb6Y69Cw/exec"
+  scriptUrl: "https://script.google.com/macros/s/AKfycbytEo7c2iIRW0QlMk3nY5ykIXg-JKaTPgHJs4Dq9DgC6KqyjFSLkZ4o6pnxEXrKaWAJ/exec"
 };
