@@ -7,7 +7,7 @@
 (() => {
   "use strict";
   const EVENT_AT = new Date("2026-11-14T11:00:00-05:00").getTime();
-  const DEADLINE = new Date("2026-11-05T13:00:00-05:00").getTime();
+  const DEADLINE = new Date("2026-11-06T13:00:00-05:00").getTime();
   const ENDPOINT = (window.IVANJO_CONFIG?.scriptUrl || "").trim();
   const CONFIGURED = /^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec(?:\?.*)?$/.test(ENDPOINT);
   const $ = id => document.getElementById(id);
