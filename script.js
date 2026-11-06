@@ -7,7 +7,7 @@
 (() => {
   "use strict";
   const EVENT_AT = new Date("2026-11-14T11:00:00-05:00").getTime();
-  const DEADLINE = new Date("2026-11-06T13:00:00-05:00").getTime();
+  const DEADLINE = new Date("2026-11-12T13:00:00-05:00").getTime();
   const ENDPOINT = (window.IVANJO_CONFIG?.scriptUrl || "").trim();
   const CONFIGURED = /^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec(?:\?.*)?$/.test(ENDPOINT);
   const $ = id => document.getElementById(id);
@@ -172,7 +172,7 @@
   });
   $("shareButton").addEventListener("click", async () => {
     const url = window.location.href.split("#")[0];
-    const text = "⚽ ¡Estás invitado al cumple de Iván Joaquín! 🎂 5 años | Sábado 14 de noviembre de 2026 | 11:00 a. m. | Country Club San Antonio, km 72 Panamericana Sur. ¡Fútbol, piscina y full day! Confirma hasta el 05/11 a la 1:00 p. m.";
+    const text = "⚽ ¡Estás invitado al cumple de Iván Joaquín! 🎂 5 años | Sábado 14 de noviembre de 2026 | 11:00 a. m. | Country Club San Antonio, km 72 Panamericana Sur. ¡Fútbol, piscina y full day! Confirma hasta el 12/11 a la 1:00 p. m.";
     if (navigator.share) {
       try { await navigator.share({title:"Cumpleaños de Iván Joaquín",text,url}); return; } catch (error) { if (error.name === "AbortError") return; }
     }
